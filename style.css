@@ -1,0 +1,116 @@
+/* GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.navbar {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0px 1px 10px black;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  position: relative;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav-link::after {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: yellow;
+  transition: 0.3s ease-in-out;
+  clip-path: var(--clippy);
+}
+
+a.nav-link:hover {
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* MAIN */
+
+main {
+  padding: 5% 10%;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 80%;
+  padding-top: 70px;
+  text-align: justify;
+}
+
+section > div {
+  max-width: auto;
+}
+
+/* section sobre-mi */
+
+#sobre-mi .col-md-4 img {
+  width: 100%;
+}
+
+#sobre-mi .col-md-8 h5 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#sobre-mi .col-md-8 p {
+  text-align: start;
+}
+
+#sobre-mi img {
+  background-color: rgba(255, 255, 0, 0.6);
+  clip-path: circle(60%);
+  width: 400px;
+  height: 400px;
+}
+
+#sobre-mi:hover .card {
+  box-shadow: 5px 5px 5px black;
+  transform: scale(1.01);
+}
+
+/* section experiencia y section educacion*/
+
+#experiencia h5, #educacion h5, #habilidades h5{
+  text-align: center;
+}
+
+#experiencia:hover .card,  #educacion:hover .card{
+  box-shadow: 5px 5px 5px black;
+  transform: scale(1.01);
+}
+
+/* section educacion */
+
+#educacion .item1:hover, #educacion .item2:hover, #educacion .item3:hover {
+  background-color: #343a40;
+}
+
+/* section habilidades */
+
+#habilidades:hover .card, #habilidades:hover .accordion {
+  box-shadow: 5px 5px 5px black;
+  transform: scale(1.01);
+}
