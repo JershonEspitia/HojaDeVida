@@ -87,30 +87,61 @@ section > div {
 }
 
 #sobre-mi:hover .card {
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px rgba(255, 255, 0, 0.6);
   transform: scale(1.01);
 }
 
 /* section experiencia y section educacion*/
 
-#experiencia h5, #educacion h5, #habilidades h5{
+h5 {
   text-align: center;
 }
 
-#experiencia:hover .card,  #educacion:hover .card{
-  box-shadow: 5px 5px 5px black;
+#experiencia:hover .card,
+#educacion:hover .card, 
+#proyectos:hover .card,
+#certificaciones:hover .card,
+#habilidades:hover .card,
+#habilidades:hover .accordion,
+#contribuciones:hover .card,
+#referencias:hover .card
+{
+  box-shadow: 5px 5px 5px rgba(255, 255, 0, 0.6);
   transform: scale(1.01);
 }
 
-/* section educacion */
-
-#educacion .item1:hover, #educacion .item2:hover, #educacion .item3:hover {
+#educacion .item:hover,
+#proyectos .item:hover,
+#certificaciones .item:hover,
+#contribuciones .item:hover,
+#referencias .item:hover
+{
   background-color: #343a40;
 }
 
-/* section habilidades */
+/* section certificaciones */
 
-#habilidades:hover .card, #habilidades:hover .accordion {
-  box-shadow: 5px 5px 5px black;
-  transform: scale(1.01);
+section > p {
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  border-top: 2px solid white;
+  padding: 30px 0px;
+  background-color: rgb(27, 27, 27);
+  justify-content: center;
+}
+
+footer p, footer a {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: 700;
 }
