@@ -65,6 +65,10 @@ section > div {
 
 /* section sobre-mi */
 
+#sobre-mi .card {
+  transition: all 0.3s ease-in-out;
+}
+
 #sobre-mi .col-md-4 img {
   width: 100%;
 }
@@ -89,12 +93,25 @@ section > div {
 #sobre-mi:hover .card {
   box-shadow: 5px 5px 5px rgba(255, 255, 0, 0.6);
   transform: scale(1.01);
+  transition: all 0.3s ease-in-out;
 }
 
 /* section experiencia y section educacion*/
 
 h5 {
   text-align: center;
+}
+
+#experiencia .card,
+#educacion .card, 
+#proyectos .card,
+#certificaciones .card,
+#habilidades .card,
+#habilidades .accordion,
+#contribuciones .card,
+#referencias .card
+{
+  transition: all 0.3s ease-in-out;
 }
 
 #experiencia:hover .card,
@@ -108,6 +125,7 @@ h5 {
 {
   box-shadow: 5px 5px 5px rgba(255, 255, 0, 0.6);
   transform: scale(1.01);
+  transition: all 0.3s ease-in-out;
 }
 
 #educacion .item:hover,
